@@ -3,15 +3,29 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
+@font-face {
+  font-family: "rc";
+  src: url('../font/AvenirLTStd-Black.otf');
+}
+
+@font-face {
+  font-family: "rc0";
+  src: url('../font/AvenirLTStd-Black.otf');
+}
+
+@font-face {
+  font-family: "rc1";
+  src: url('../font/proxima-nova-596d7da6c8703.otf');
+}
 body {
   overflow-x: hidden;
-  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  font-family: 'rc1', 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 p {
   line-height: 1.75; }
 
 a {
-  color: #fed136; }
+  color: #68499d; }
   a.active, a:active, a:focus, a:hover {
     color: #f2d025; }
 
@@ -69,12 +83,12 @@ body {
     text-transform: uppercase;
     color: white;
     border: 0;
-    background-color: #fed136;
+    background-color: #221d36;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase; }
   #mainNav .navbar-brand {
     color: #f2d025;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, cursive; font-weight: 700; text-transform: uppercase}
+    font-family: 'rc1', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, cursive; font-weight: 700; text-transform: uppercase}
     #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
       color: #f2d025; }
   #mainNav .navbar-nav .nav-item .nav-link {
@@ -83,7 +97,7 @@ body {
     padding: 0.75em 0;
     letter-spacing: 1px;
     color: white;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'rc1', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase; }
     #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
       color: #fed136; }
@@ -96,7 +110,7 @@ body {
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    /*background-color: transparent;*/ }
+    background-color: transparent; }
     #mainNav .navbar-brand {
       font-size: 1.75em;
       -webkit-transition: all 0.3s;
@@ -107,7 +121,7 @@ body {
     #mainNav.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
-      background-color: #222222; }
+      background-color: #221d36; }
       #mainNav.navbar-shrink .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0; } }
@@ -115,7 +129,7 @@ body {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg-10-purple.jpg");
+  background-image: url("../img/header-bg-10-purple-1900.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -124,7 +138,7 @@ header.masthead {
   -o-background-size: cover;
   background-size: cover; }
   header.masthead .intro-text {
-    padding-top: 150px;
+    padding-top: 100px;
     padding-bottom: 100px; }
     header.masthead .intro-text .intro-lead-in {
       font-size: 22px;
@@ -133,17 +147,22 @@ header.masthead {
       margin-bottom: 25px;
       font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     header.masthead .intro-text .intro-heading {
-      font-size: 50px;
+      font-size: 30px;
       font-weight: 700;
       line-height: 50px;
-      margin-bottom: 25px;
-      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      margin-bottom: 50px;
+      letter-spacing: .01em;
+      font-family: 'rc', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       text-transform: uppercase; }
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px; }
+    padding-top: 100px;
+    padding-bottom: 150px; }
+
+    header.masthead img {
+      padding-top: 20px;
+      padding-bottom: 40px; }
     header.masthead .intro-text .intro-lead-in {
       font-size: 40px;
       font-style: italic;
@@ -151,11 +170,11 @@ header.masthead {
       margin-bottom: 25px;
       font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     header.masthead .intro-text .intro-heading {
-      font-size: 75px;
+      font-size: 55px;
       font-weight: 700;
       line-height: 75px;
       margin-bottom: 50px;
-      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-family: 'rc', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       text-transform: uppercase; } }
 
 .service-heading {
@@ -485,7 +504,7 @@ footer {
     font-size: 90%;
     line-height: 40px;
     text-transform: none;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'rc1', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase; }
   footer ul.quicklinks {
     font-size: 90%;
@@ -509,12 +528,12 @@ ul.social-buttons {
     color: white;
     border-radius: 100%;
     outline: none;
-    background-color: #222222; }
+    background-color: #282561; }
     ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
       background-color: #fed136; }
 
 .text-primary {
-  color: #221d36 !important; }
+  color: #282561 !important; }
 
 .btn-primary {
   font-weight: 700;
@@ -567,11 +586,11 @@ ul.social-buttons {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase; }
   .btn-xl.focus, .btn-xl:focus {
-    color: white;
-    border-color: #221d36;
-    background-color: #f2d025; }
+    color: #68499d;
+    border-color: #68499d;
+    background-color: #221d36; }
   .btn-xl:hover {
-    color: #fff;
+    color: #68499d;
     border-color: #221d36;
     background-color: #221d36; }
   .btn-xl.active, .btn-xl:active,
