@@ -180,6 +180,7 @@ header.masthead {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  height: 100vh !important;
 }
 
 header.masthead .intro-text {
