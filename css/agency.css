@@ -68,7 +68,7 @@ section h3.section-subheading {
 
 @media (min-width: 768px) {
   section {
-    padding: 75px 0px 0px 0px;
+    padding: 75px 0px 75px 0px;
   }
 }
 
