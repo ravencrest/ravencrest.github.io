@@ -182,11 +182,15 @@ header.masthead {
   -o-background-size: cover;
   background-size: cover;
   height: 100vh !important;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 header.masthead .intro-text {
-  padding-top: 80px;
-  padding-bottom: 100px;
 }
 
 header.masthead .intro-text .intro-lead-in {
