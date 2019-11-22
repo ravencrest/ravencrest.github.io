@@ -97,6 +97,7 @@ body {
 
 .navbar {
   background-color: #221d36;
+background-image: linear-gradient(2deg, #282561, #221d36)
 }
 
 .navbar-toggler {
@@ -145,6 +146,7 @@ body {
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
     background-color: transparent;
+    background-image: none;
   }
 
  .navbar .navbar-brand {
@@ -764,12 +766,14 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 .text-primary {
-  color: #2a144b !important;
+  color: #282561 !important;
 }
 
 .fa-inverse {
   color: #fff;
 }
+
+
 
 .btn-primary {
   font-weight: 700;
@@ -830,12 +834,14 @@ fieldset[disabled] .btn-primary:hover {
   font-size: 18px;
   font-weight: 700;
   padding: 20px 40px;
-  border-radius: 6px;
+  border-radius: 8px;
   color: #ffffff;
-  border-color: #221d36;
-  background-color: #221d36;
+  border-color: #6d6d71;
+  background-color: #282561;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
+
+
 }
 
 .btn-xl.focus, .btn-xl:focus {
